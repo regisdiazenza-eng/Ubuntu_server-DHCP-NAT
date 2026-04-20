@@ -3,13 +3,13 @@
 Pour cet exercice, on va simuler un réseau avec un serveur Ubuntu qui fera office de serveur DHCP. On aura aussi un réseau interne avec des machines clientes qui se connecteront au serveur DHCP pour obtenir une adresse IP et qui utiliseront l'adresse IP DNS du réseau externe pour résoudre les noms de domaine.
 
 PS: Les machines clientes doivent avoir une carte réseau "interne" et le nom du réseau doit être le même que celui du serveur. (Exemple: "lab_diaz" pour notre cas)
-Les machines clientes doivent avoir un nom de réseau pour être sur un même switch
+Les machines clientes doivent avoir un nom de réseau identique pour être sur un même switch
 
 ## 1. Paramétrage des cartes réseaux
 
 - Deux cartes réseaux :
     -Une en bridge (connecté au réseau local donnant accès à Internet)
-    -Une en interne (connecté au réseau interne, c'est celle-ci qui servira de passerelle pour le réseau interne)
+    -L'autre en interne (connecté au réseau interne, c'est celle-ci qui servira de passerelle pour le réseau interne)
 
 ## 2. Configuration des interfaces réseau
 
