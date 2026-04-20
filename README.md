@@ -4,5 +4,5 @@
 
 Select your language / Choisissez votre langue :
 
-* [🇫🇷 Français](Administration_réseau/Administration_reseau_ubuntu_serveur_routage.md.md)
+* [🇫🇷 Français](Administration_réseau/Administration_reseau_ubuntu_serveur_routage.md)
 * [🇺🇸 English](Administration_réseau/Ubuntu_server_Network_Administration.md)
