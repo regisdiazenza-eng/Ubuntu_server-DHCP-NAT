@@ -3,7 +3,7 @@
 For this exercise, we will simulate a network with an Ubuntu server acting as a DHCP server. We will also have an internal network with client machines that connect to the DHCP server to obtain an IP address and use the external network's DNS IP for domain name resolution.
 
 PS: Client machines must have an "internal" network card and the network name must be the same as the server's. (Example: "lab_diaz" in our case).
-Client machines must have a network name to be on the same switch.
+Client machines must have a same network name to be on the same switch.
 
 ## 1. Server Configuration
 
