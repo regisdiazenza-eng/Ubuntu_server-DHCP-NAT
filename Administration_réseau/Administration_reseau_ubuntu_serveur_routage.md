@@ -8,7 +8,7 @@ Les machines clientes doivent avoir un nom de réseau identique pour être sur u
 ## 1. Paramétrage des cartes réseaux
 
 - Deux cartes réseaux :
-    ### Une en bridge (connecté au réseau local donnant accès à Internet)
+    ##### Une en bridge (connecté au réseau local donnant accès à Internet)
     ### L'autre en interne (connecté au réseau interne, c'est celle-ci qui servira de passerelle pour le réseau interne)
 
 ## 2. Configuration des interfaces réseau
