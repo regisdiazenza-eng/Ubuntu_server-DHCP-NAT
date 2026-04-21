@@ -8,8 +8,8 @@ Les machines clientes doivent avoir un nom de réseau identique pour être sur u
 ## 1. Paramétrage des cartes réseaux
 
 - Deux cartes réseaux :
-    -Une en bridge (connecté au réseau local donnant accès à Internet)
-    *L'autre en interne (connecté au réseau interne, c'est celle-ci qui servira de passerelle pour le réseau interne)
+    ### Une en bridge (connecté au réseau local donnant accès à Internet)
+    ### L'autre en interne (connecté au réseau interne, c'est celle-ci qui servira de passerelle pour le réseau interne)
 
 ## 2. Configuration des interfaces réseau
 
@@ -44,13 +44,15 @@ L'interface en bridge doit avoir une adresse IP réservée ou fixe (pour ne pas 
         INTERFACESv6=""
 
     - sudo nano /etc/dhcp/dhcpd.conf
-        subnet (adresse du réseau) netmask (masque du réseau) {
-            range (adresse IP de début) (adresse IP de fin);     # Plage d'IP distribuées
-            option routers (adresse IP de la passerelle);           # Passerelle par défaut (IP de l'interface en interne)
-            option domain-name-servers (adresse IP du serveur DNS);   # DNS
-            default-lease-time 600;  # Durée de vie du bail en secondes
-            max-lease-time 7200;     # Durée de vie maximale du bail en secondes
-            }
+ 
+      
+            subnet (adresse du réseau) netmask (masque du réseau) {
+                range (adresse IP de début) (adresse IP de fin);     # Plage d'IP distribuées
+                option routers (adresse IP de la passerelle);           # Passerelle par défaut (IP de l'interface en interne)
+                option domain-name-servers (adresse IP du serveur DNS);   # DNS
+                default-lease-time 600;  # Durée de vie du bail en secondes
+                max-lease-time 7200;     # Durée de vie maximale du bail en secondes
+                }
         ![alt text](image-7.png)
 
      Netplan est un outil de configuration réseau pour Ubuntu
