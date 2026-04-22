@@ -22,7 +22,7 @@ L'interface en bridge doit avoir une adresse IP réservée ou fixe (pour ne pas 
     - sysctl -w net.ipv4.ip_forward=1
 
     - sudo nano /proc/sys/net/ipv4/ip_forward :
-    Ce fichier a de base la valeur 0 et on va devoir l'attribuer la valeur 1 pour activer le routage.
+        Ce fichier a de base la valeur 0 et on va devoir l'attribuer la valeur 1 pour activer le routage.
 
 - Vérification du routage
 
@@ -40,7 +40,8 @@ L'interface en bridge doit avoir une adresse IP réservée ou fixe (pour ne pas 
 
 - Configuration du serveur DHCP
 
-    - sudo nano /etc/default/isc-dhcp-server
+    - sudo nano /etc/default/isc-dhcp-server:
+      
         -INTERFACESv4="enp0s8" (interface du réseau interne, celle qui recevra les requêtes DHCP)
   
         -INTERFACESv6=""
