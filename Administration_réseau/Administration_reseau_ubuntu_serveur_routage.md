@@ -42,6 +42,7 @@ L'interface en bridge doit avoir une adresse IP réservée ou fixe (pour ne pas 
 
     - sudo nano /etc/default/isc-dhcp-server
         INTERFACESv4="enp0s8" (interface du réseau interne, celle qui recevra les requêtes DHCP)
+  
         INTERFACESv6=""
 
     - sudo nano /etc/dhcp/dhcpd.conf
